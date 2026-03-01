@@ -118,7 +118,7 @@ object JsManager {
             it.await()
           }
         } else {
-          scripts.map {
+          scripts.mapNotNull {
             getOrWriteJs(it, playerConfig.id, type)
           }
         }

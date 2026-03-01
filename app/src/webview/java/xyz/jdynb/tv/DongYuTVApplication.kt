@@ -5,6 +5,7 @@ import android.app.Application
 import android.content.Context
 import com.drake.brv.utils.BRV
 import com.drake.engine.base.Engine
+import xyz.jdynb.tv.utils.CrashHandler
 
 class DongYuTVApplication : Application() {
 
@@ -20,6 +21,7 @@ class DongYuTVApplication : Application() {
   override fun onCreate() {
     super.onCreate()
     context = this
+    CrashHandler.getInstance().init()
 
     Engine.initialize(this)
     BRV.modelId = BR.m

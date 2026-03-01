@@ -35,6 +35,29 @@
       }
     },
     {
+      "id": "cctv",
+      "name": "base",
+      "url": "https://tv.cctv.com/live/{{id}}",
+      "script": {
+        "init": [
+          "https://gitee.com/jdy2002/DongYuTvWeb/raw/master/app/src/main/assets/js/cctv/init.js"
+        ],
+        "play": [
+          "https://gitee.com/jdy2002/DongYuTvWeb/raw/master/app/src/main/assets/js/cctv/play.js"
+        ],
+        "resume_pause": [
+          "https://gitee.com/jdy2002/DongYuTvWeb/raw/master/app/src/main/assets/js/cctv/resume_pause.js"
+        ]
+      },
+      // 需要排除的资源文件
+      "exclude": {
+        "url": [],
+        // 需要排除的地址
+        "suffix": []
+        // 需要排除的地址后缀
+      }
+    },
+    {
       "id": "common",
       "name": "simple",
       // "url": "https://gitee.com/jdy2002/DongYuTvWeb/raw/master/app/src/main/assets/html/simple_player.html",
@@ -154,10 +177,151 @@
   // 播放频道列表
   "channel": [
     {
+      "channelType": "央视",
+      "player": "cctv",
+      "hidden": true,
+      "channelList": [
+        {
+          "channelName": "CCTV1",
+          "desc": "综合",
+          "args": {
+            "id": "cctv1"
+          }
+        },
+        {
+          "channelName": "CCTV2",
+          "desc": "财经",
+          "args": {
+            "id": "cctv2"
+          }
+        },
+        {
+          "channelName": "CCTV3",
+          "desc": "综艺",
+          "args": {
+            "id": "cctv3"
+          }
+        },
+        {
+          "channelName": "CCTV4",
+          "desc": "中文国际",
+          "args": {
+            "id": "cctv4"
+          }
+        },
+        {
+          "channelName": "CCTV5",
+          "desc": "体育",
+          "args": {
+            "id": "cctv5"
+          }
+        },
+        {
+          "channelName": "CCTV6",
+          "desc": "电影",
+          "args": {
+            "id": "cctv6"
+          }
+        },
+        {
+          "channelName": "CCTV7",
+          "desc": "国防军事",
+          "args": {
+            "id": "cctv7"
+          }
+        },
+        {
+          "channelName": "CCTV8",
+          "desc": "电视剧",
+          "args": {
+            "id": "cctv8"
+          }
+        },
+        {
+          "channelName": "CCTV9",
+          "desc": "记录",
+          "args": {
+            "id": "cctv9"
+          }
+        },
+        {
+          "channelName": "CCTV10",
+          "desc": "科教",
+          "args": {
+            "id": "cctv10"
+          }
+        },
+        {
+          "channelName": "CCTV11",
+          "desc": "戏曲",
+          "args": {
+            "id": "cctv11"
+          }
+        },
+        {
+          "channelName": "CCTV12",
+          "desc": "社会与法",
+          "args": {
+            "id": "cctv12"
+          }
+        },
+        {
+          "channelName": "CCTV13",
+          "desc": "新闻",
+          "args": {
+            "id": "cctv13"
+          }
+        },
+        {
+          "channelName": "CCTV14",
+          "desc": "少儿",
+          "args": {
+            "id": "cctv14"
+          }
+        },
+        {
+          "channelName": "CCTV15",
+          "desc": "音乐",
+          "args": {
+            "id": "cctv15"
+          }
+        },
+        {
+          "channelName": "CCTV16",
+          "desc": "奥林匹克",
+          "args": {
+            "id": "cctv16"
+          }
+        },
+        {
+          "channelName": "CCTV17",
+          "desc": "农业农村",
+          "args": {
+            "id": "cctv17"
+          }
+        },
+        {
+          "channelName": "CCTV4",
+          "desc": "中文国际(欧)",
+          "args": {
+            "id": "cctveurope"
+          }
+        },
+        {
+          "channelName": "CCTV-4",
+          "desc": "中文国际(美)",
+          "args": {
+            "id": "cctvamerica"
+          }
+        }
+      ]
+    },
+    {
       // 播放频道类型
       "channelType": "央视",
       // 需要播放的播放器（播放器id)
       "player": "ysp",
+      "hidden": false,
       // 频道列表
       "channelList": [
         {
@@ -393,6 +557,7 @@
     {
       "channelType": "卫视",
       "player": "ysp",
+      "hidden": false,
       "channelList": [
         {
           "channelName": "北京卫视",
