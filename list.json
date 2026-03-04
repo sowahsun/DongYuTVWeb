@@ -1,0 +1,72 @@
+[
+  {
+    "version": "1.0.6.5",
+    "filename": "DongYuTVWeb_v1.0.6.5.apk",
+    "date": "2026-02-23T08:54:47Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.4...1.0.6.5\r\n\r\n1. 添加设置功能",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.5/DongYuTVWeb_v1.0.6.5.apk"
+  },
+  {
+    "version": "1.0.6.4",
+    "filename": "DongYuTVWeb_v1.0.6.4.apk",
+    "date": "2026-02-14T02:04:38Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.3...1.0.6.4\r\n\r\n1. 去除悬浮窗弹窗提示",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.4/DongYuTVWeb_v1.0.6.4.apk"
+  },
+  {
+    "version": "1.0.6.3",
+    "filename": "DongYuTVWeb_v1.0.6.3.apk",
+    "date": "2026-02-06T07:47:45Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.2...1.0.6.3\r\n\r\n1. 添加开机自启动",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.3/DongYuTVWeb_v1.0.6.3.apk"
+  },
+  {
+    "version": "1.0.6.2",
+    "filename": "DongYuTVWeb_v1.0.6.2.apk",
+    "date": "2026-02-01T09:44:36Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.1...1.0.6.2\r\n\r\n1.一些调整",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.2/DongYuTVWeb_v1.0.6.2.apk"
+  },
+  {
+    "version": "1.0.6.1",
+    "filename": "DongYuTVWeb_v1.0.6.1.apk",
+    "date": "2026-01-22T04:26:17Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6...1.0.6.1\r\n\r\n1.修复已知问题",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.1/DongYuTVWeb_v1.0.6.1.apk"
+  },
+  {
+    "version": "1.0.6",
+    "filename": "DongYuTVWeb_v1.0.6.apk",
+    "date": "2026-01-21T06:01:40Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.5...1.0.6\r\n\r\n1. 优化\r\n2. 支持广西卫视",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6/DongYuTVWeb_v1.0.6.apk"
+  },
+  {
+    "version": "1.0.5",
+    "filename": "DongYuTVWeb_v1.0.5.apk",
+    "date": "2026-01-19T05:26:48Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.4...1.0.5",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.5/DongYuTVWeb_v1.0.5.apk"
+  },
+  {
+    "version": "1.0.4",
+    "filename": "DongYuTVWeb_v1.0.4.apk",
+    "date": "2026-01-03T09:06:51Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.3...1.0.4\r\n\r\n1.修复无法播放的问题",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.4/DongYuTVWeb_v1.0.4.apk"
+  },
+  {
+    "version": "1.0.3",
+    "filename": "DongYuTVWeb_v1.0.3.apk",
+    "date": "2025-12-31T13:40:40Z",
+    "description": "**完整的更新日志**: https://gitee.com/jdy2002/DongYuTvWeb/commits/1.0.3\r\n\r\n支持在线编辑脚本和频道\r\n **下载说明** \r\n- 高Android版本请下载名称带WebView的版本（体积小，系统内核）\r\n- 设备比较老的请下载名称带X5的版本，使用的X5内核，可能只支持Android13以下版本，并且需要是64位设备。\r\n- 国内仓库高速下载：https://gitee.com/jdy2002/DongYuTvWeb/releases\r\n- 32位设备X5内核：https://jdy2002.lanzoue.com/iJYxD3f2321c （不保证正常使用）",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.3/DongYuTVWeb_v1.0.3.apk"
+  },
+  {
+    "version": "1.0.2",
+    "filename": "DongYuTVWeb_v1.0.2.apk",
+    "date": "2025-12-29T02:50:31Z",
+    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.1...1.0.2\r\n\r\n修复已知问题，支持在线更新！",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.2/DongYuTVWeb_v1.0.2.apk"
+  }
+]
