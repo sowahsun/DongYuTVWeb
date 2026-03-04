@@ -1,0 +1,80 @@
+name: Bulk Sync and Generate list.json
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # 每12小时全自动运行一次
+  workflow_dispatch:      # 支持手动点击 Run workflow 立即同步
+
+permissions:
+  contents: write
+
+jobs:
+  sync_and_json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync and Generate Metadata
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. 获取原作者最近的 10 个 Release 数据
+          RELEASES_DATA=$(curl -s https://api.github.com/repos/Yu2002s/DongYuTVWeb/releases | jq -c '.[:10]')
+          
+          # 初始化 list.json 数组
+          echo "[]" > list.json
+
+          echo "$RELEASES_DATA" | jq -c '.[]' | while read -r row; do
+            TAG=$(echo "$row" | jq -r '.tag_name')
+            DATE=$(echo "$row" | jq -r '.created_at')
+            BODY=$(echo "$row" | jq -r '.body // ""')
+            ORIGINAL_URL=$(echo "$row" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url' | head -n 1)
+            
+            # 如果原始链接为空，跳过
+            if [ "$ORIGINAL_URL" == "null" ] || [ -z "$ORIGINAL_URL" ]; then continue; fi
+
+            # 统一命名格式
+            NEW_FILE_NAME="DongYuTVWeb_v${TAG}.apk"
+            # 你的仓库下载永久地址
+            PERMANENT_URL="https://github.com/${{ github.repository }}/releases/download/${TAG}/${NEW_FILE_NAME}"
+
+            # 2. 同步并重命名 Release（如果本地不存在）
+            if ! gh release view "$TAG" > /dev/null 2>&1; then
+              echo "Syncing $TAG..."
+              curl -L -o "$NEW_FILE_NAME" "$ORIGINAL_URL"
+              gh release create "$TAG" "$NEW_FILE_NAME" --title "v$TAG" --notes "$BODY"
+            fi
+
+            # 3. 将信息写入临时 JSON 对象并合并到 list.json
+            jq --arg tag "$TAG" \
+               --arg file "$NEW_FILE_NAME" \
+               --arg date "$DATE" \
+               --arg desc "$BODY" \
+               --arg url "$PERMANENT_URL" \
+               '. += [{version: $tag, filename: $file, date: $date, description: $desc, download_url: $url}]' \
+               list.json > tmp.json && mv tmp.json list.json
+          done
+
+      - name: Update Latest Shortcut
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 获取绝对最新的信息
+          LATEST_JSON=$(curl -s https://api.github.com/repos/Yu2002s/DongYuTVWeb/releases/latest)
+          LATEST_URL=$(echo "$LATEST_JSON" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url' | head -n 1)
+          
+          if [ "$LATEST_URL" != "null" ] && [ -n "$LATEST_URL" ]; then
+            curl -L -o "DongYuTVWeb_latest.apk" "$LATEST_URL"
+            gh release delete latest --yes || true
+            git push --delete origin latest || true
+            gh release create latest DongYuTVWeb_latest.apk --title "Latest" --notes "Permanent latest link"
+          fi
+
+      - name: Commit and Push JSON
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add list.json
+          # 只有在文件有变动时才提交，避免产生无用的 commit 记录
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update list.json" && git push)
