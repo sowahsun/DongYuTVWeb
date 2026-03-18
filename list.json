@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.0.9-fix",
+    "filename": "DongYuTVWeb_v1.0.9-fix.apk",
+    "date": "2026-03-16T12:40:16Z",
+    "description": "1. 修复已知问题",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.9-fix/DongYuTVWeb_v1.0.9-fix.apk"
+  },
+  {
     "version": "1.0.9",
     "filename": "DongYuTVWeb_v1.0.9.apk",
     "date": "2026-03-16T12:40:16Z",
@@ -61,12 +68,5 @@
     "date": "2026-01-22T04:26:17Z",
     "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6...1.0.6.1\r\n\r\n1.修复已知问题",
     "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.1/DongYuTVWeb_v1.0.6.1.apk"
-  },
-  {
-    "version": "1.0.6",
-    "filename": "DongYuTVWeb_v1.0.6.apk",
-    "date": "2026-01-21T06:01:40Z",
-    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.5...1.0.6\r\n\r\n1. 优化\r\n2. 支持广西卫视",
-    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6/DongYuTVWeb_v1.0.6.apk"
   }
 ]
