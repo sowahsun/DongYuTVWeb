@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.0.10",
+    "filename": "DongYuTVWeb_v1.0.10.apk",
+    "date": "2026-03-19T04:52:07Z",
+    "description": "📢 下载与安装须知（设备版本选择指南）\r\n由于 Android 电视与机顶盒设备硬件差异巨大，为了大家获得更好的性能表现并尽量减少安装包体积，我们提供了针对不同硬件平台的分包下载。\r\n\r\n一般情况下，如果不清楚自己设备的架构：请直接优先下载带有 arm32、armeabi-v7a 或 universal（全量包）字样的版本，兼容性最高！\r\n\r\n以下是各个包的具体说明，请对照自身设备进行下载：\r\n\r\n📺 1. 架构篇（CPU 位数怎么选？）\r\narm32 / armeabi-v7a / armeabi（⭐ 最推荐 / 兼容95%以上电视）\r\n适用设备：绝大多数的智能电视（海信、创维、小米等）、传统电视盒子（如小米盒子、天猫魔盒、当贝盒子标准版等）、智能投影仪、车机系统。\r\n特点：兼容性极强。不仅能在 32 位设备跑，在绝大部分 64 位的电视系统上也能向下兼容运行。如果不确定，下这个准没错！\r\narm64 / arm64-v8a（🚀 性能版）\r\n适用设备：只支持 64 位架构的新款高端设备（如配置较好的近两年新款旗舰电视、高端外贸盒子、以及您如果想装在现代大部分 Android 智能手机上测试）。\r\n特点：运行效率更高，内存寻址更大，但如果装在老旧 32 位电视上会提示“无法解析该安装包”或“安装失败”。",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.10/DongYuTVWeb_v1.0.10.apk"
+  },
+  {
     "version": "1.0.9-fix",
     "filename": "DongYuTVWeb_v1.0.9-fix.apk",
     "date": "2026-03-16T12:40:16Z",
@@ -61,12 +68,5 @@
     "date": "2026-02-01T09:44:36Z",
     "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.1...1.0.6.2\r\n\r\n1.一些调整",
     "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.2/DongYuTVWeb_v1.0.6.2.apk"
-  },
-  {
-    "version": "1.0.6.1",
-    "filename": "DongYuTVWeb_v1.0.6.1.apk",
-    "date": "2026-01-22T04:26:17Z",
-    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6...1.0.6.1\r\n\r\n1.修复已知问题",
-    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.1/DongYuTVWeb_v1.0.6.1.apk"
   }
 ]
