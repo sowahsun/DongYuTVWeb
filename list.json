@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.0.10-release",
+    "filename": "DongYuTVWeb_v1.0.10-release.apk",
+    "date": "2026-03-19T04:52:07Z",
+    "description": "1. 支持滑动切台\r\n2. 支持频道换源\r\n3. 接入X5内核\r\n\r\n下载须知：64位设备安装名字带arm64,32位设备安装名字带arm32位的",
+    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.10-release/DongYuTVWeb_v1.0.10-release.apk"
+  },
+  {
     "version": "1.0.10",
     "filename": "DongYuTVWeb_v1.0.10.apk",
     "date": "2026-03-19T04:52:07Z",
@@ -61,12 +68,5 @@
     "date": "2026-02-06T07:47:45Z",
     "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.2...1.0.6.3\r\n\r\n1. 添加开机自启动",
     "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.3/DongYuTVWeb_v1.0.6.3.apk"
-  },
-  {
-    "version": "1.0.6.2",
-    "filename": "DongYuTVWeb_v1.0.6.2.apk",
-    "date": "2026-02-01T09:44:36Z",
-    "description": "**Full Changelog**: https://github.com/Yu2002s/DongYuTVWeb/compare/1.0.6.1...1.0.6.2\r\n\r\n1.一些调整",
-    "download_url": "https://github.com/sowahsun/DongYuTVWeb/releases/download/1.0.6.2/DongYuTVWeb_v1.0.6.2.apk"
   }
 ]
